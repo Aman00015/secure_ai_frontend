@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* SecureAI Suite Design System - Cybersecurity Theme
+All colors MUST be HSL. Based on Checkmarx-inspired design.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core SecureAI Brand Colors */
+    --background: 229 84% 5%;
+    --foreground: 273 100% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Brand Purple - #6B34FD */
+    --primary: 259 97% 59%;
+    --primary-foreground: 273 100% 98%;
+    --primary-glow: 259 97% 75%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Light Purple - #FCF9FE */
+    --secondary: 273 100% 98%;
+    --secondary-foreground: 229 84% 5%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Card and Surface Colors */
+    --card: 229 84% 8%;
+    --card-foreground: 273 100% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --popover: 229 84% 8%;
+    --popover-foreground: 273 100% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent and Muted */
+    --accent: 259 97% 59%;
+    --accent-foreground: 273 100% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 229 50% 15%;
+    --muted-foreground: 259 30% 70%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Semantic Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 273 100% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --success: 142 76% 36%;
+    --success-foreground: 273 100% 98%;
 
-    --radius: 0.5rem;
+    --warning: 48 96% 53%;
+    --warning-foreground: 229 84% 5%;
+
+    /* Interactive Elements */
+    --border: 229 50% 15%;
+    --input: 229 50% 15%;
+    --ring: 259 97% 59%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(229 84% 5%) 0%, hsl(259 97% 15%) 50%, hsl(229 84% 5%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(229 84% 8%), hsl(229 50% 12%));
+
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 8px 32px hsl(229 84% 5% / 0.5);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
