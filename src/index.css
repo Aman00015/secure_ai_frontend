@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&display=swap');
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
 
 /* SecureAI Suite Design System - Cybersecurity Theme
 All colors MUST be HSL. Based on Checkmarx-inspired design.
@@ -123,9 +128,16 @@ All colors MUST be HSL. Based on Checkmarx-inspired design.
 @layer base {
   * {
     @apply border-border;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  }
+
+  *::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
   }
 
   body {
     @apply bg-background text-foreground;
+    overflow-y: auto;
   }
 }

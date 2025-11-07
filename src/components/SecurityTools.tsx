@@ -12,7 +12,9 @@ import {
   Shield,
   Zap
 } from "lucide-react";
-
+// import Link from "next/link";
+import VulnerabilityScannerPage from "@/pages/tools/vulnerability-scanner";
+import { Link } from "react-router-dom";
 const SecurityTools = () => {
   const tools = [
     {
@@ -21,6 +23,7 @@ const SecurityTools = () => {
       description: "Scan GitHub repositories for security vulnerabilities and get detailed CVE analysis with patch recommendations.",
       features: ["GitHub Integration", "CVE Database", "Patch Analysis", "Automated Reports"],
       status: "Ready",
+      href: "/tools/vulnerability-scanner",
       color: "success"
     },
     {
@@ -29,7 +32,9 @@ const SecurityTools = () => {
       description: "Discover subdomains and analyze attack surfaces using advanced reconnaissance techniques.",
       features: ["DNS Enumeration", "Certificate Analysis", "Brute Force", "API Integration"],
       status: "Ready",
-      color: "success"
+      color: "success",
+      href: "/tools/subdomain-finder"
+
     },
     {
       icon: <AlertTriangle className="h-8 w-8 text-primary" />,
@@ -37,7 +42,9 @@ const SecurityTools = () => {
       description: "Identify malicious URLs and phishing attempts using AI-powered analysis and threat intelligence.",
       features: ["URL Reputation", "AI Analysis", "Real-time Scanning", "Threat Intelligence"],
       status: "Ready",
-      color: "success"
+      color: "success",
+      href: "/tools/phishing-detector"
+
     },
     {
       icon: <FileX className="h-8 w-8 text-primary" />,
@@ -45,7 +52,9 @@ const SecurityTools = () => {
       description: "Scan files for malware, viruses, and suspicious content using multiple detection engines.",
       features: ["Multi-Engine Scan", "Behavioral Analysis", "Sandboxing", "File Reputation"],
       status: "Ready",
-      color: "success"
+      color: "success",
+      href: "/tools/malware-scanner"
+
     }
   ];
 
@@ -111,10 +120,12 @@ const SecurityTools = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
+                  <Link to={tool.href} className="flex-1">
                   <Button variant="default" size="sm" className="flex-1">
                     Try Tool
                     <ArrowRight className="h-4 w-4" />
                   </Button>
+                  </Link>
                   <Button variant="outline" size="sm">
                     <Search className="h-4 w-4" />
                   </Button>

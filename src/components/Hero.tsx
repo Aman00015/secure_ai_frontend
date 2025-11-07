@@ -1,27 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Scan, Globe, AlertTriangle, FileX } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/video/hero-bg.mp4" // 👉 place your video file in the public/videos folder
+        autoPlay
+        loop
+        muted
+        playsInline
       />
-      
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-90" />
-      
-      {/* Floating Security Icons */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Shield className="absolute top-1/4 left-1/4 h-8 w-8 text-primary/30 animate-float" style={{ animationDelay: '0s' }} />
-        <Scan className="absolute top-1/3 right-1/4 h-6 w-6 text-primary-glow/40 animate-float" style={{ animationDelay: '2s' }} />
-        <Globe className="absolute bottom-1/3 left-1/3 h-10 w-10 text-primary/20 animate-float" style={{ animationDelay: '4s' }} />
-        <AlertTriangle className="absolute bottom-1/4 right-1/3 h-7 w-7 text-primary-glow/30 animate-float" style={{ animationDelay: '1s' }} />
-        <FileX className="absolute top-1/2 left-1/6 h-9 w-9 text-primary/25 animate-float" style={{ animationDelay: '3s' }} />
-      </div>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -30,7 +24,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-2 mb-8">
             <Shield className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">
-              #1 AI-Powered Security Platform
+              AI-Powered Security Platform
             </span>
           </div>
 

@@ -8,13 +8,13 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md font-orbitron">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">SecureAI</span>
+            {/* <Shield className="h-8 w-8 text-primary" /> */}
+            <span className="text-xl font-bold text-foreground font-orbitron">s e c u r e . a i</span>
           </div>
 
           {/* Desktop Navigation */}
