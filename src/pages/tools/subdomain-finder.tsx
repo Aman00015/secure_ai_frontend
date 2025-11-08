@@ -29,7 +29,7 @@ const SubdomainFinder: React.FC = () => {
     setResult(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/subdomain/find', {
+      const response = await fetch('https://secure-ai-backend.onrender.com/subdomain/find', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
