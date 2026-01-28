@@ -7,8 +7,6 @@
 [![Powered by FastAPI](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python-green)](https://fastapi.tiangolo.com)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-secure--ai.netlify.app-brightgreen)](https://secure-ai.netlify.app)
 
----
-
 ## 📋 Overview
 
 Secure AI is a comprehensive cybersecurity platform providing multiple security scanning and analysis tools. The platform combines a modern React frontend with a robust FastAPI backend to deliver vulnerability scanning, phishing detection, subdomain discovery, and AI-powered security fix generation.
@@ -16,8 +14,6 @@ Secure AI is a comprehensive cybersecurity platform providing multiple security 
 The architecture leverages machine learning models trained on security features and integrates with industry-standard security tools like **pip-audit**, **npm audit**, and **osv-scanner** to provide multi-language vulnerability detection across 15+ programming languages.
 
 The platform features async/await architecture for concurrent processing, **Google Gemini AI** integration for intelligent fix generation, and production-ready deployments on **Netlify** (frontend) and **Render** (backend).
-
----
 
 ## ✨ Key Features
 
@@ -46,18 +42,16 @@ The platform features async/await architecture for concurrent processing, **Goog
 - Vulnerability assessment documentation
 - Export-ready format
 
----
-
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Secure AI - Main Dashboard](/images/main.png)
+![Secure AI - Main Dashboard](public/images/main.png)
 
 ### Vulnerability Scanner
-![Secure AI - Vulnerability Scanner](/images/scanner.png)
+![Secure AI - Vulnerability Scanner](public/images/scanner.png)
 
 ### Phishing Detection
-![Secure AI - Phishing Detection](/images/phishing.png)
+![Secure AI - Phishing Detection](public/images/phishing.png)
 
 ---
 
@@ -99,8 +93,6 @@ The platform features async/await architecture for concurrent processing, **Goog
 
 Refer to the backend repository for FastAPI setup instructions.
 
----
-
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -125,8 +117,6 @@ Refer to the backend repository for FastAPI setup instructions.
 - **Certificate Transparency** - Subdomain discovery
 - **SecurityTrails** - Security intelligence
 
----
-
 ## 🎯 How It Works
 
 ### Vulnerability Scanning Process
@@ -150,8 +140,6 @@ Refer to the backend repository for FastAPI setup instructions.
 3. Results aggregated and deduplicated
 4. Comprehensive subdomain report generated
 
----
-
 ## 📊 Performance & Impact
 
 - **50+** users actively scanning repositories for security vulnerabilities
@@ -160,8 +148,6 @@ Refer to the backend repository for FastAPI setup instructions.
 - **1000+** CVEs covered
 - **50%** faster vulnerability detection with async processing
 - Integrated with **Google Gemini AI** for intelligent security fix generation
-
----
 
 ## 🏗️ Architecture Highlights
 
@@ -188,8 +174,6 @@ Refer to the backend repository for FastAPI setup instructions.
 6. Results returned to frontend
 7. PDF report generation and export
 
----
-
 ## 🎓 Technical Challenges & Solutions
 
 ### Challenge: Integrating Multiple Security Tools
@@ -207,8 +191,6 @@ Refer to the backend repository for FastAPI setup instructions.
 ### Challenge: Model Persistence & Deployment
 **Solution:** Deployed trained models using joblib with version control for reproducibility
 
----
-
 ## 🔐 Security Considerations
 
 - All external API calls validated and sanitized
@@ -216,8 +198,6 @@ Refer to the backend repository for FastAPI setup instructions.
 - Regular vulnerability assessments
 - Production deployments with environment variable protection
 - HTTPS enforced for all communications
-
----
 
 ## 🚀 Deployment
 
@@ -230,8 +210,6 @@ Refer to the backend repository for FastAPI setup instructions.
 - **Hosting:** Render
 - **Runtime:** Python environment with dependencies
 - **Database:** PostgreSQL managed instance
-
----
 
 ## 📝 Project Structure
 
@@ -254,8 +232,6 @@ secure-ai/
 └── package.json          # Project dependencies
 ```
 
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
@@ -266,13 +242,9 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
----
 
 ## 🙋 Support
 
@@ -280,8 +252,6 @@ For issues, questions, or suggestions, please:
 - Open an issue on GitHub
 - Contact the development team
 - Check documentation at [https://secure-ai.netlify.app](https://secure-ai.netlify.app)
-
----
 
 ## 🌟 Acknowledgments
 
@@ -291,13 +261,9 @@ For issues, questions, or suggestions, please:
 - AI powered by [Google Gemini](https://deepmind.google/technologies/gemini/)
 - UI components from [Shadcn/ui](https://ui.shadcn.com)
 
----
-
 ## 📅 Project Timeline
 
 **Year:** 2025
-
----
 
 **Live Demo:** [https://secure-ai.netlify.app](https://secure-ai.netlify.app)
 
